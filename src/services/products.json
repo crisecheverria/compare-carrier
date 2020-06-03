@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "cost":62.98,
+      "currency":"sek",
+      "lead_time":2,
+      "product":"dhl_1"
+    },
+
+    { "cost":134,
+      "currency":"sek",
+      "lead_time":2,
+      "product":"ups_1"
+    },
+
+    { "cost":147.23,
+      "currency":"sek",
+      "lead_time":2,
+      "product":"dhl_2"
+    },
+
+    {
+      "cost":416.21,
+      "currency":"sek",
+      "lead_time":1,
+      "product":"tnt_1"
+    },
+
+    {
+      "cost":98.23,
+      "currency":"sek",
+      "lead_time":3,
+      "product":"tnt_2"
+    },
+
+    {
+      "cost":349.21,
+      "currency":"sek",
+      "lead_time":1,
+      "product":"tnt_3"
+    },
+
+    { "cost":1342.76,
+      "currency":"sek",
+      "lead_time":1,
+      "product":"dhl_3"
+    },
+
+    { "cost":123,
+      "currency":"sek",
+      "lead_time":2,
+      "product":"ups_2"
+    },
+
+    { "cost":176,
+      "currency":"sek",
+      "lead_time":2,
+      "product":"dsv_1"
+    }
+  ]
+}

@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react"
+import Buttons from "./components/Buttons"
+import Products from "./components/Products"
 
 function App() {
+  const [parameterState, setParameterState] = useState("")
+
+  function sortByParameter(parameter) {
+    setParameterState(parameter)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section className="hero is-fullheight">
+      <div className="hero-body">
+        <div className="container">
+          <h2>
+            <strong>Sort by</strong>
+          </h2>
+          <Buttons sortBy={sortByParameter} />
+          <Products sortParameter={parameterState} />
+        </div>
+      </div>
+    </section>
+  )
 }
 
-export default App;
+export default App
