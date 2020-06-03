@@ -1,0 +1,534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders <App /> component 1`] = `
+<body>
+  <div>
+    <section
+      class="hero is-fullheight"
+    >
+      <div
+        class="hero-body"
+      >
+        <div
+          class="container"
+        >
+          <h2>
+            <strong>
+              Sort by
+            </strong>
+          </h2>
+          <h2
+            class="subtitle"
+          >
+            <button
+              class="button is-light"
+              data-testid="btn-cheapest"
+              name="cheapest"
+              type="button"
+            >
+              Cheapest
+            </button>
+            <button
+              class="button is-light"
+              data-testid="btn-fastest"
+              name="fastest"
+              type="button"
+            >
+              Fastest
+            </button>
+          </h2>
+          <div
+            class="columns is-desktop"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/dhl.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        DHL 1
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          62.98 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          2 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="2"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/ups.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        UPS 1
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          134 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          2 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="2"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/dhl.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        DHL 2
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          147.23 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          2 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="2"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div
+            class="columns is-desktop"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/tnt.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        TNT 1
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          416.21 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          1 day
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="1"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/tnt.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        TNT 2
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          98.23 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          3 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="3"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/tnt.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        TNT 3
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          349.21 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          1 day
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="1"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div
+            class="columns is-desktop"
+          >
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/dhl.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        DHL 3
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          1342.76 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          1 day
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="1"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/ups.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        UPS 2
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          123 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          2 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="2"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="column"
+            >
+              <div
+                class="custom-box"
+              >
+                <article
+                  class="media"
+                >
+                  <div
+                    class="media-left"
+                  >
+                    <figure
+                      class="image is-64x64"
+                    >
+                      <img
+                        alt="logo"
+                        class="is-rounded"
+                        src="images/dsv.svg"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="media-content"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <p>
+                        DSV 1
+                      </p>
+                      <p
+                        class="currency"
+                      >
+                        <strong>
+                          176 kr
+                        </strong>
+                      </p>
+                      <span>
+                        <strong>
+                          2 days
+                        </strong>
+                        <progress
+                          class="progress is-warning"
+                          max="7"
+                          value="2"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+`;

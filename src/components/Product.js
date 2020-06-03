@@ -1,26 +1,41 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { normalizeProductName, normalizeProductImageURL, normalizeProductCost, normalizeProductTime } from "../utils"
+import {
+  normalizeProductName,
+  normalizeProductImageURL,
+  normalizeProductCost,
+  normalizeProductTime,
+} from "../utils"
 
-function Product({ product }) {
-  const { product: name, cost, currency, lead_time } = product
+function Product({ product, weather }) {
+  const { product: name, cost, lead_time: leadTime } = product
+
   return (
-    <div className="box">
+    <div className="custom-box">
       <article className="media">
         <div className="media-left">
           <figure className="image is-64x64">
             <img
               className="is-rounded"
               src={`images/${normalizeProductImageURL(name)}`}
-              alt="Image"
+              alt="logo"
             />
           </figure>
         </div>
         <div className="media-content">
           <div className="content">
             <p>{normalizeProductName(name)}</p>
-            <p><strong>{normalizeProductCost(cost, currency)}</strong></p>
-            <span><strong>{normalizeProductTime(lead_time)}</strong><progress className="progress is-warning" value={lead_time} max="7">75%</progress></span>
+            <p className="currency">
+              <strong>{normalizeProductCost(cost, weather, name)}</strong>
+            </p>
+            <span>
+              <strong>{normalizeProductTime(leadTime)}</strong>
+              <progress
+                className="progress is-warning"
+                value={leadTime}
+                max="7"
+              />
+            </span>
           </div>
         </div>
       </article>
@@ -29,7 +44,13 @@ function Product({ product }) {
 }
 
 Product.propTypes = {
-  product: PropTypes.object,
+  product: PropTypes.shape({
+    cost: PropTypes.number,
+    currency: PropTypes.string,
+    lead_time: PropTypes.number,
+    product: PropTypes.string,
+  }).isRequired,
+  weather: PropTypes.string.isRequired,
 }
 
 export default Product

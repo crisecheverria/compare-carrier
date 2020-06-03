@@ -1,3 +1,8 @@
+import Decimal from "decimal.js"
+
+const sunny = ["clear sky", "few clouds", "scattered clouds", "broken clouds"]
+const raining = ["shower rain", "rain", "thunderstorm"]
+
 export default function splitEvery(arr, length) {
   return arr.reduce((result, item, index) => {
     if (index % length === 0) result.push([])
@@ -7,19 +12,45 @@ export default function splitEvery(arr, length) {
 }
 
 export function normalizeProductName(str) {
-  return str.replace(/_/g, ' ').toUpperCase()
+  return str.replace(/_/g, " ").toUpperCase()
 }
 
 export function normalizeProductImageURL(str) {
-  return str.slice(0, 3) + ".svg"
+  return `${str.slice(0, 3)}.svg`
 }
 
-export function normalizeProductCost(cost, currency) {
-  if (currency === "sek") {
-    return `${cost} kr`
+function checkWeatherIncrement(weather, product) {
+  const isSunny = sunny.filter((s) => s === weather).length
+  const isRaining = raining.filter((r) => r === weather).length
+  const carrier = normalizeProductName(product).slice(0, 3)
+
+  let increase = 0
+  if (isRaining) {
+    increase = 0.05
+    if (carrier === "DSV") increase = 0.1
+    if (carrier === "UPS") increase = 0.25
+    if (carrier === "TNT") increase = -0.3
   }
+
+  if (isSunny) {
+    increase = -0.05
+    if (carrier === "DSV") increase = -0.5
+  }
+
+  return increase
+}
+
+export function normalizeProductCost(cost, weather, product) {
+  const weatherCostChange = checkWeatherIncrement(weather, product)
+  if (weatherCostChange !== 0) {
+    const weatherCost = new Decimal(cost).times(weatherCostChange)
+    const totalCost = new Decimal(cost).plus(weatherCost).toPrecision(5)
+    return `${totalCost} kr`
+  }
+
+  return `${cost} kr`
 }
 
 export function normalizeProductTime(time) {
-  return time > 1 ? `${time} days` : `${time} day` 
+  return time > 1 ? `${time} days` : `${time} day`
 }

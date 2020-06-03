@@ -15,7 +15,10 @@ function Buttons({ sortBy }) {
         type="button"
         onClick={handleClick}
         name="cheapest"
-        className={btnClick === "cheapest" ? "button is-light" : "button"}
+        className={
+          btnClick === "cheapest" ? "button is-active" : "button is-light"
+        }
+        data-testid="btn-cheapest"
       >
         Cheapest
       </button>
@@ -23,7 +26,10 @@ function Buttons({ sortBy }) {
         type="button"
         onClick={handleClick}
         name="fastest"
-        className={btnClick === "fastest" ? "button is-light" : "button"}
+        className={
+          btnClick === "fastest" ? "button is-active" : "button is-light"
+        }
+        data-testid="btn-fastest"
       >
         Fastest
       </button>

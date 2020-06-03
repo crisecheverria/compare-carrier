@@ -1,0 +1,4 @@
+{
+  "weatherApiUrl": "https://api.openweathermap.org/data/2.5/weather?q=Gothenburg,se&appid=",
+  "appid": "cdd0c42a157ca4f7c14f4551bc88d99a"
+}

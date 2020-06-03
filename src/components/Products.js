@@ -1,11 +1,23 @@
-import React, { useState, Fragment } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
+import axios from "axios"
+import config from "../config.json"
 import getProducts from "../services/fakeProductService"
 import splitEvery from "../utils"
 import Product from "./Product"
 
 function Products({ sortParameter }) {
   const [products] = useState(getProducts().items)
+  const [weather, setWeather] = useState("")
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await axios(config.weatherApiUrl + config.appid)
+      setWeather(data.weather[0].description)
+    }
+
+    fetchData()
+  }, [])
 
   function compareCheapest(a, b) {
     if (a.cost > b.cost) return 1
@@ -21,26 +33,30 @@ function Products({ sortParameter }) {
 
   const sortedProducts = [...products]
   if (sortParameter === "cheapest") sortedProducts.sort(compareCheapest)
-
   if (sortParameter === "fastest") sortedProducts.sort(compareFastest)
 
   return (
-    <Fragment>
-      {splitEvery(sortedProducts, 3).map((productsChunk) => (
-        <div className="columns is-desktop">
-          {productsChunk.map((product) => (
-            <div className="column">
-              <Product key={product.product} product={product} />
+    <>
+      {splitEvery(sortedProducts, 3).map((productsChunk, i) => (
+        /* eslint-disable */
+        <div key={i} className="columns is-desktop">
+          {productsChunk.map((product, i) => (
+            <div key={i} className="column">
+              <Product
+                key={product.product}
+                product={product}
+                weather={weather}
+              />
             </div>
           ))}
         </div>
       ))}
-    </Fragment>
+    </>
   )
 }
 
 Products.propTypes = {
-  sortParameter: PropTypes.string,
+  sortParameter: PropTypes.string.isRequired,
 }
 
 export default Products

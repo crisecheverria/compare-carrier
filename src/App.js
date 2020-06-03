@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Buttons from "./components/Buttons"
 import Products from "./components/Products"
+import "./App.css"
 
 function App() {
   const [parameterState, setParameterState] = useState("")
