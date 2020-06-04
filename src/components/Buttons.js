@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 
 function Buttons({ sortBy }) {
-  const [btnClick, setBtnClick] = useState("")
+  const [selectedOption, setSelectedOption] = useState("")
 
   function handleClick(e) {
-    setBtnClick(e.target.name)
+    setSelectedOption(e.target.name)
     sortBy(e.target.name)
   }
 
@@ -16,7 +16,7 @@ function Buttons({ sortBy }) {
         onClick={handleClick}
         name="cheapest"
         className={
-          btnClick === "cheapest" ? "button is-active" : "button is-light"
+          selectedOption === "cheapest" ? "button is-active" : "button is-light"
         }
         data-testid="btn-cheapest"
       >
@@ -27,7 +27,7 @@ function Buttons({ sortBy }) {
         onClick={handleClick}
         name="fastest"
         className={
-          btnClick === "fastest" ? "button is-active" : "button is-light"
+          selectedOption === "fastest" ? "button is-active" : "button is-light"
         }
         data-testid="btn-fastest"
       >

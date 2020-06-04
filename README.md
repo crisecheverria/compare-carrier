@@ -15,7 +15,7 @@ I decided to structure the hierarchy of the components like this:
 
 ```
 App Component
-  - Buttons Component       // For the Sorting Logic
+  - Buttons Component      
   - Products Component      
     - Product Component
 ```
