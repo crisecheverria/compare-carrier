@@ -5,7 +5,7 @@ import {
   normalizeProductImageURL,
   normalizeProductCost,
   normalizeProductTime,
-} from "../utils"
+} from "../../utils"
 
 function Product({ product, weather }) {
   const { product: name, cost, lead_time: leadTime } = product
@@ -18,18 +18,24 @@ function Product({ product, weather }) {
             <img
               className="is-rounded"
               src={`images/${normalizeProductImageURL(name)}`}
-              alt="logo"
+              alt={`${normalizeProductName(name)}-logo`}
             />
           </figure>
         </div>
         <div className="media-content">
           <div className="content">
-            <p>{normalizeProductName(name)}</p>
-            <p className="currency">
-              <strong>{normalizeProductCost(cost, weather, name)}</strong>
+            <p data-testid="carrier">{normalizeProductName(name)}</p>
+            <p data-testid="cost" className="currency">
+              <strong>
+                {Number.parseFloat(
+                  normalizeProductCost(cost, weather, name)
+                ).toFixed(2)}
+              </strong>
             </p>
             <span>
-              <strong>{normalizeProductTime(leadTime)}</strong>
+              <strong data-testid="time">
+                {normalizeProductTime(leadTime)}
+              </strong>
               <progress
                 className="progress is-warning"
                 value={leadTime}

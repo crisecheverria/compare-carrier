@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import axios from "axios"
-import config from "../config.json"
-import getProducts from "../services/fakeProductService"
-import splitEvery from "../utils"
-import Product from "./Product"
+import config from "../../config.json"
+import getProducts from "../../services/fakeProductService"
+import { splitEvery, compareCheapest, compareFastest } from "../../utils"
+import Product from "../Product"
 
 function Products({ sortParameter }) {
   const [products] = useState(getProducts().items)
@@ -19,18 +19,6 @@ function Products({ sortParameter }) {
     fetchData()
   }, [])
 
-  function compareCheapest(a, b) {
-    if (a.cost > b.cost) return 1
-    if (a.cost < b.cost) return -1
-    return 0
-  }
-
-  function compareFastest(a, b) {
-    if (a.lead_time > b.lead_time) return 1
-    if (a.lead_time < b.lead_time) return -1
-    return 0
-  }
-
   const sortedProducts = [...products]
   if (sortParameter === "cheapest") sortedProducts.sort(compareCheapest)
   if (sortParameter === "fastest") sortedProducts.sort(compareFastest)
@@ -41,7 +29,7 @@ function Products({ sortParameter }) {
         /* eslint-disable */
         <div key={i} className="columns is-desktop">
           {productsChunk.map((product, i) => (
-            <div key={i} className="column">
+            <div key={i} className="column" data-testid="products">
               <Product
                 key={product.product}
                 product={product}

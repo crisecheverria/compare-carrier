@@ -3,7 +3,19 @@ import Decimal from "decimal.js"
 const sunny = ["clear sky", "few clouds", "scattered clouds", "broken clouds"]
 const raining = ["shower rain", "rain", "thunderstorm"]
 
-export default function splitEvery(arr, length) {
+export function compareCheapest(a, b) {
+  if (a.cost > b.cost) return 1
+  if (a.cost < b.cost) return -1
+  return 0
+}
+
+export function compareFastest(a, b) {
+  if (a.lead_time > b.lead_time) return 1
+  if (a.lead_time < b.lead_time) return -1
+  return 0
+}
+
+export function splitEvery(arr, length) {
   return arr.reduce((result, item, index) => {
     if (index % length === 0) result.push([])
     result[Math.floor(index / length)].push(item)
@@ -44,7 +56,7 @@ export function normalizeProductCost(cost, weather, product) {
   const weatherCostChange = checkWeatherIncrement(weather, product)
   if (weatherCostChange !== 0) {
     const weatherCost = new Decimal(cost).times(weatherCostChange)
-    const totalCost = new Decimal(cost).plus(weatherCost).toPrecision(5)
+    const totalCost = new Decimal(cost).plus(weatherCost)
     return `${totalCost} kr`
   }
 

@@ -3,11 +3,8 @@ This project was created with Create React App + Bulma + Axios + OpenWeather + D
 ## Demo
 
 Some says that an image talk more than 1000 words!
-What about a Live Demo!... uff 100,000 words?... Who knows!
 
 You can find a [live demo here](https://cocky-banach-75db02.netlify.app/)
-
-Althought the repo of the project was uploaded as a **Private Repo**.
 
 ## Components Structure
 

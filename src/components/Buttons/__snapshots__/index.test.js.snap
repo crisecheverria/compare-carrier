@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render sorting options from <Buttons /> component 1`] = `
+<body>
+  <div>
+    <h2
+      class="subtitle"
+    >
+      <button
+        class="button is-light"
+        data-testid="sorting-options"
+        name="cheapest"
+        type="button"
+      >
+        cheapest
+      </button>
+      <button
+        class="button is-light"
+        data-testid="sorting-options"
+        name="fastest"
+        type="button"
+      >
+        fastest
+      </button>
+    </h2>
+  </div>
+</body>
+`;
