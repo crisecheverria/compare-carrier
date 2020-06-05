@@ -3,8 +3,15 @@ import { render } from "@testing-library/react"
 import Products from "."
 import getProducts from "../../services/fakeProductService"
 
-test("render <Products /> component", () => {
+test("render <Products /> component sortBy 'cheapest'", () => {
   const sortParameter = "cheapest"
+  const { baseElement } = render(<Products sortParameter={sortParameter} />)
+
+  expect(baseElement).toMatchSnapshot()
+})
+
+test("render <Products /> component sortBy 'fastest'", () => {
+  const sortParameter = "fastest"
   const { baseElement } = render(<Products sortParameter={sortParameter} />)
 
   expect(baseElement).toMatchSnapshot()
