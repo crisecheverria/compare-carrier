@@ -23,18 +23,17 @@ export function splitEvery(arr, length) {
   }, [])
 }
 
-export function normalizeProductName(str) {
+export function normalizeCarrierName(str) {
   return str.replace(/_/g, " ").toUpperCase()
 }
 
-export function normalizeProductImageURL(str) {
+export function normalizeCarrierImageURL(str) {
   return `${str.slice(0, 3)}.svg`
 }
 
-function checkWeatherIncrement(weather, product) {
+function checkWeatherIncrement(weather, carrier) {
   const isSunny = sunny.filter((s) => s === weather).length
   const isRaining = raining.filter((r) => r === weather).length
-  const carrier = normalizeProductName(product).slice(0, 3)
 
   let increase = 0
   if (isRaining) {
@@ -52,8 +51,9 @@ function checkWeatherIncrement(weather, product) {
   return increase
 }
 
-export function normalizeProductCost(cost, weather, product) {
-  const weatherCostChange = checkWeatherIncrement(weather, product)
+export function normalizeCarrierCost(cost, weather, product) {
+  const carrierName = normalizeCarrierName(product).slice(0, 3)
+  const weatherCostChange = checkWeatherIncrement(weather, carrierName)
   if (weatherCostChange !== 0) {
     const weatherCost = new Decimal(cost).times(weatherCostChange)
     const totalCost = new Decimal(cost).plus(weatherCost)
@@ -63,6 +63,6 @@ export function normalizeProductCost(cost, weather, product) {
   return `${cost} kr`
 }
 
-export function normalizeProductTime(time) {
+export function normalizeCarrierTime(time) {
   return time > 1 ? `${time} days` : `${time} day`
 }

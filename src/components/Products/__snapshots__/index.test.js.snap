@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render <Products /> component 1`] = `
+<body>
+  <div>
+    <div
+      class="columns is-desktop"
+    >
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="DHL 1-logo"
+                  class="is-rounded"
+                  src="images/dhl.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  DHL 1
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    62.98
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    2 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="2"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="TNT 2-logo"
+                  class="is-rounded"
+                  src="images/tnt.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  TNT 2
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    98.23
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    3 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="3"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="UPS 2-logo"
+                  class="is-rounded"
+                  src="images/ups.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  UPS 2
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    123.00
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    2 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="2"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div
+      class="columns is-desktop"
+    >
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="UPS 1-logo"
+                  class="is-rounded"
+                  src="images/ups.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  UPS 1
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    134.00
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    2 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="2"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="DHL 2-logo"
+                  class="is-rounded"
+                  src="images/dhl.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  DHL 2
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    147.23
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    2 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="2"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="DSV 1-logo"
+                  class="is-rounded"
+                  src="images/dsv.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  DSV 1
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    176.00
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    2 days
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="2"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div
+      class="columns is-desktop"
+    >
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="TNT 3-logo"
+                  class="is-rounded"
+                  src="images/tnt.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  TNT 3
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    349.21
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    1 day
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="1"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="TNT 1-logo"
+                  class="is-rounded"
+                  src="images/tnt.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  TNT 1
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    416.21
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    1 day
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="1"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div
+        class="column"
+        data-testid="products"
+      >
+        <div
+          class="custom-box"
+        >
+          <article
+            class="media"
+          >
+            <div
+              class="media-left"
+            >
+              <figure
+                class="image is-64x64"
+              >
+                <img
+                  alt="DHL 3-logo"
+                  class="is-rounded"
+                  src="images/dhl.svg"
+                />
+              </figure>
+            </div>
+            <div
+              class="media-content"
+            >
+              <div
+                class="content"
+              >
+                <p
+                  data-testid="carrier"
+                >
+                  DHL 3
+                </p>
+                <p
+                  class="currency"
+                  data-testid="cost"
+                >
+                  <strong>
+                    1342.76
+                  </strong>
+                </p>
+                <span>
+                  <strong
+                    data-testid="time"
+                  >
+                    1 day
+                  </strong>
+                  <progress
+                    class="progress is-warning"
+                    max="7"
+                    value="1"
+                  />
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {
-  normalizeProductName,
-  normalizeProductImageURL,
-  normalizeProductCost,
-  normalizeProductTime,
+  normalizeCarrierName,
+  normalizeCarrierImageURL,
+  normalizeCarrierCost,
+  normalizeCarrierTime,
 } from "../../utils"
 
 function Product({ product, weather }) {
@@ -17,24 +17,24 @@ function Product({ product, weather }) {
           <figure className="image is-64x64">
             <img
               className="is-rounded"
-              src={`images/${normalizeProductImageURL(name)}`}
-              alt={`${normalizeProductName(name)}-logo`}
+              src={`images/${normalizeCarrierImageURL(name)}`}
+              alt={`${normalizeCarrierName(name)}-logo`}
             />
           </figure>
         </div>
         <div className="media-content">
           <div className="content">
-            <p data-testid="carrier">{normalizeProductName(name)}</p>
+            <p data-testid="carrier">{normalizeCarrierName(name)}</p>
             <p data-testid="cost" className="currency">
               <strong>
                 {Number.parseFloat(
-                  normalizeProductCost(cost, weather, name)
+                  normalizeCarrierCost(cost, weather, name)
                 ).toFixed(2)}
               </strong>
             </p>
             <span>
               <strong data-testid="time">
-                {normalizeProductTime(leadTime)}
+                {normalizeCarrierTime(leadTime)}
               </strong>
               <progress
                 className="progress is-warning"
